@@ -1,0 +1,15 @@
+#задача на тему словари
+empty = {}
+print(empty)
+print('Vvedite key:  ')
+a = input()
+print('Vvedite znachenie:  ')
+a2 = input()
+print('Vvedite key:  ')
+b = input()
+print('Vvedite znachenie:  ')
+b2 = input()
+print('Vvedite key:  ')
+print('Vvedite znachenie:  ')
+a = input()
+print()

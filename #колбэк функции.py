@@ -31,15 +31,14 @@ process_number(entered_num, print_square_num)
 
 
 #пример два
-def send_data(data):
-    #отправка данных на сервер к примеру
-    pass
+def send_data(data):#отправка данных на сервер к примеру
+    pass# чтобы функция была валидная
 
 
-def process_data(input_data, send_data_fn):
+def process_data(input_data, send_data_fn):#обработка данных перед отправкой
     updated_data = input_data.copy()
     # actions with update_date
     send_data_fn(updated_data)
     
     
-process_data({'name': 'Andrew'}, send_data)
+process_data({'name': 'Andrew'}, send_data)  

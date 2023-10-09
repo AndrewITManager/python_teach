@@ -17,9 +17,29 @@ def print_number_info(num):
     else:
         print("Entered number is odd")
 
-
-def process_number(num, callback_fn):
+def print_square_num(num):
+    print("Square of the num is", num*num)
+    
+    
+def process_number(num, callback_fn):#колбэк функция
     callback_fn(num)
+
 
 entered_num = int(input('Enter any number: '))
 process_number(entered_num, print_number_info)
+process_number(entered_num, print_square_num)
+
+
+#пример два
+def send_data(data):
+    #отправка данных на сервер к примеру
+    pass
+
+
+def process_data(input_data, send_data_fn):
+    updated_data = input_data.copy()
+    # actions with update_date
+    send_data_fn(updated_data)
+    
+    
+process_data({'name': 'Andrew'}, send_data)

@@ -1,4 +1,4 @@
-#инструкция if elif
+#инструкция if in def
 def nums_info(a, b):
     if (type(a) is not int) or (type(b) is not int):
         return "not integer"

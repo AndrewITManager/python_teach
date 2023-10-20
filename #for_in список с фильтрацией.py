@@ -23,4 +23,30 @@ for val in my_set:
 print(new_set)
 print(my_set)
 
+#comprehensions for set
+my_set_two = {1, 10, 15}
+new_set_two = {value * value for value in my_set_two}
+print(new_set_two)
+print(my_set_two)
+
+#формирование для словарей
+my_scores = {
+    'a': 10,
+    'b': 7,
+    'm': 14,
+}
+
+# scores = {}
+# for key, value1 in my_scores.items():
+#     scores[key] = value1 * 10
+scores = {k: v * 10 for k, v in my_scores.items()}
+print(type(scores))
+print(scores)
+print(my_scores)
+
+
+# 
+my_scores_one = [10, 7, 14]
+scores_dict = {ke: va for ke, va in enumerate(my_scores_one)}
+print(scores_dict)
 

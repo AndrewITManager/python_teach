@@ -7,13 +7,19 @@ class Comment:
     def upvote(self, qty):
         self.votes_qty += qty
 
-# first_comment = Comment("First comment")
-# print(first_comment.text)
-# print(first_comment.votes_qty)
+    @staticmethod#статический метод
+    def merge_comments(first, second):
+        return f"{first} {second}"
 
-# print(first_comment.__dict__)
+ 
 
-# print(dir(first_comment)) #все атрибуты экземпляра
+first_comment = Comment("First comment")
+print(first_comment.text)
+print(first_comment.votes_qty)
+
+print(first_comment.__dict__)
+
+print(dir(first_comment)) #все атрибуты экземпляра
 
 my_comment = Comment("My comment")
 # print(dir(my_comment))
@@ -23,11 +29,9 @@ my_comment = Comment("My comment")
 my_comment.upvote = 10
 print(my_comment.votes_qty)
 
-second_comment = Comment("Second comment")
-second_comment.upvote(2)
-print(second_comment.votes_qty)
-
-
+# second_comment = Comment("Second comment")
+# second_comment.upvote(2)
+# print(second_comment.votes_qty)
 
 
 

@@ -24,3 +24,8 @@ print(first_img)
 
 second_img = Image('8000x5000', "My cat", 'png')
 print(second_img)
+
+print(object)
+print(Image)
+print(first_img)
+ 

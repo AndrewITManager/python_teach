@@ -21,3 +21,6 @@ first_img.resize('4000x3000')
 print(first_img.resolution)
 
 print(first_img)
+
+second_img = Image('8000x5000', "My cat", 'png')
+print(second_img)

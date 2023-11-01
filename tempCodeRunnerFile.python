@@ -1,8 +1,20 @@
-from pathlib import Path
-cwd = Path('/Users') / 'Xadmin' / 'Desktop' / 'python' / 'python_teach-2' / 'Django'
+#чтение и запись файлов
 
-if not cwd.exists():
-        cwd.mkdir()
+# test_file = open('test.txt', 'w')
+# # print(test_file)
+# # print(type(test_file))
+# test_file.write("First string\n")
+# test_file.close()
 
-# if cwd.exists():
-#     cwd.rmdir()
+with open('test.txt', 'w') as test_file:
+    test_file.write("First string\n")
+    test_file.write("Second string\n")
+    test_file.write("Third string\n")
+
+# test_file = open('test.txt')
+# print(test_file.read())
+# test_file.close()
+
+with open('test.txt') as test_file:
+    print(test_file.read())
+

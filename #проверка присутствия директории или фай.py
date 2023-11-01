@@ -12,3 +12,8 @@ print(Path('main.py').is_file())
 print(Path('../python').is_file())
 print(Path('../python_teach-2').is_dir())
 
+#список файлов и папок
+for f in Path('.').iterdir():
+    print(f)
+    
+

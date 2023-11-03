@@ -30,9 +30,18 @@ def chek_password(password):
     
     
     
-print(chek_password('123'))
-print(chek_password('12345678'))
-print(chek_password('12334545AS'))
-print(chek_password('asdaASDFFG'))
-print(chek_password('123asdfASD'))
-print(chek_password('123asdfASD !#$'))
+# print(chek_password('123'))
+# print(chek_password('12345678'))
+# print(chek_password('12334545AS'))
+# print(chek_password('asdaASDFFG'))
+# print(chek_password('123asdfASD'))
+# print(chek_password('123asdfASD !#$'))
+
+while True:
+    password = input("Please enter password: ")
+    password_check_res = chek_password(password)
+    if password_check_res[0]:
+        print(password_check_res[1])
+        break
+    print(password_check_res[1])
+

@@ -15,6 +15,11 @@ my_email['to'] = 'friend@email.com'
 my_email['subject'] = "Let's go out"
 my_email.set_content(html_content, 'html')#передача контента в формате html
 
+with open('images/cherep.jpg', 'rb') as img:#read binary режим бинарного чтения
+    image_data = img.read()
+    my_email.add_attachment(image_data, maintype='image', subtype='jpg', filename='cherep.jpg')#присоединение дополнения
+
+
 with smtplib.SMTP(host='192.168.0.1', port=2525) as smtp_server:
     smtp_server.ehlo()
     # smtp_server.starttls() # если нужна авторизация

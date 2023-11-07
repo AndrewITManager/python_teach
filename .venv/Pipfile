@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 autopep8 = "*"
+bs4 = "*"
+lxml = "*"
 
 [dev-packages]
 

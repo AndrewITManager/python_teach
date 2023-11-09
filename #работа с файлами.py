@@ -1,5 +1,6 @@
 #работа с файлами
 from os import path#объект path - функциональный подход
+
 print(path.abspath('.'))#абсолютный путь к текущей папке
 print(type(path))
 

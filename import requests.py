@@ -14,3 +14,5 @@ chek_js = block.find('div', id = 'javascript_chek')
 
 with open("1.html", "w", encoding="utf-8") as file:
     file.write(responce)
+
+print(responce)

@@ -5,7 +5,7 @@ import threading
 from dadata import Dadata
 
 # Вставьте ваш API-ключ Dadata здесь
-DADATA_API_KEY = 'ваш_api_ключ_dadata'
+DADATA_API_KEY = '70f89aaae2279526d6c10fc68e2b374c2ae51435'
 
 # Создание экземпляра клиента Dadata
 dadata = Dadata(DADATA_API_KEY)

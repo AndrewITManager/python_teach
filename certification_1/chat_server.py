@@ -16,7 +16,7 @@ def get_location_by_ip(ip_address):
     try:
         # Выполнение запроса к API Dadata
         location = dadata.iplocate(ip_address)
-        if location and 'location' in location:  
+        if location:  
             # Возвращаем данные о местоположении, если они доступны
             return location
         return None

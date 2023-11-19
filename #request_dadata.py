@@ -1,8 +1,8 @@
 #request in dadata.ru 
 from dadata import Dadata #импортируем библиотеку
 
-token = '70f89aaae2279526d6c10fc68e2b374c2ae51435' # API ключ
-secret = '2d7defa7b8daed5e95578b96efece6b974b9ab85' # секретный ключ
+token = '25b303d7a9a7f9367146c3fdc84c1aecded0da8a' # API ключ
+secret = '46b69b5627460d06457e8352b015882cb1a02802' # секретный ключ
 dadata = Dadata(token, secret) # сообщаем свои token и секретный ключ для обращения
-result = dadata.clean("address", "Сегежа Антикайнена 18")
+result = dadata.iplocate("188.244.134.209")
 print(result)#вывод результата

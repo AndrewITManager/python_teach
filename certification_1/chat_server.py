@@ -9,20 +9,22 @@ DADATA_API_KEY = '25b303d7a9a7f9367146c3fdc84c1aecded0da8a'
 DADATA_API_SECRET = '46b69b5627460d06457e8352b015882cb1a02802'
 
 # Создание экземпляра клиента Dadata
-dadata = Dadata(DADATA_API_KEY, secret='46b69b5627460d06457e8352b015882cb1a02802')
+dadata = Dadata(DADATA_API_KEY, DADATA_API_SECRET)
 
 # Функция для получения геолокации по IP-адресу через API Dadata
 def get_location_by_ip(ip_address):
     try:
         # Выполнение запроса к API Dadata
         location = dadata.iplocate(ip_address)
-        if location and 'location' in location:
+        if location and 'location' in location:  
             # Возвращаем данные о местоположении, если они доступны
-            return location['location']
+            return location
         return None
     except Exception as e:
         print(f"Ошибка при запросе к Dadata: {e}")
         return None
+
+
 
 # Функция для обработки подключения клиента
 def handle_client(client_socket, username):
@@ -46,7 +48,7 @@ def handle_client(client_socket, username):
             else:
                 broadcast(f"{username}: {message}")
     except ConnectionResetError:
-        print("Клиент удален")
+        print(f"{username} удален")
     except Exception as e:
         print(f"Ошибка при обработке сообщения: {e}")
     finally:

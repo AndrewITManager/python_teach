@@ -17,7 +17,7 @@ sheet = book['TDSheet'] #выгружаем книгу TDSheet
 
 
 # выполняем поиск и сравнение по текущей дате и месяцу, если соответсвует то выводим строку с определенными полями
-for i in range(1, 490):
+for i in range(1, 500):
     try:
         day_of_birth = sheet['K' + str(i)].value.split('.')[0:2]
         if  day_of_birth == day:

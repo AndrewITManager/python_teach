@@ -14,7 +14,7 @@ def get_date(date):
 day = datetime.datetime.today().strftime("%d.%m")#текущий день, месяц
 # print(day)
 d = get_date(day) #для параметра в XML
-# day_1 = datetime.datetime.today().strftime("%d.%m.%Y").split('.')[0:2]#текущий день, месяц
+day_1 = datetime.datetime.today().strftime("%d.%m.%Y").split('.')[0:2]#текущий день, месяц
 
 ########################################################################################################
 
@@ -36,7 +36,7 @@ list_name = []
 for i in range(1, 500):
     try:
         day_of_birth = sheet['K' + str(i)].value.split('.')[0:2]
-        if  day_of_birth == day:
+        if  day_of_birth == day_1:
             # print(f"{sheet['I' + str(i)].value} -  {sheet['H' + str(i)].value} - {sheet['K' + str(i)].value.split('.')[0]}")
             list_name.append(f"{sheet['I' + str(i)].value}")
 

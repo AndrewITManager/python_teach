@@ -1,6 +1,10 @@
 from openpyxl import load_workbook #импортируем модуль работы с excel
 import datetime #импортируем модуль работы с датой
+"""_summary_
 
+    Returns:
+        _type_: _description_
+"""
 
 #перевод текущего дня и месяца в слова
 def get_date(date):

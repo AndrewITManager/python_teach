@@ -15,5 +15,5 @@ def get_date(date):
     return (day_list[int(date_list[0]) - 1] + ' ' +
         month_list[int(date_list[1]) - 1] + ' ' +
         date_list[2] + ' года')
-date = "23.11.2023"
+date = "25.11.2023"
 print(get_date(date))

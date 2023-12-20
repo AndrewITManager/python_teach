@@ -37,8 +37,7 @@ price = get_book_price(url)
 # Вывод цены книги или сообщения об ошибки 
 print(f"Цена книги: {price}")
 
-
-
+#######################################################################################################
 # Импортируем необходимые библиотеки
 from selenium import webdriver # Импорт основной библиотеки Selenium для работы с веб-браузерами
 from selenium.webdriver.chrome.service import Service # Импорт для настройки сервиса ChromeDriver
@@ -49,7 +48,7 @@ from selenium.webdriver.chrome.options import Options # Импорт для на
 # Функция для получения заголовка веб-страницы
 def get_website_title_with_selenium(url):
   # Настройка опций для браузера
-  chrome_options = Options
+  chrome_options = Options()
   chrome_options.add_argument("--headless") # Добавление опции для запуска Chrome в фоновом режиме (без графического интерфейса пользователя )
  # Инициализация драйвера Chromе с автоматической установкой через ChromeDriveManager
   driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options) 

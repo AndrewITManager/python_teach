@@ -10,7 +10,7 @@ def get_book_price(url):
     response.raise_for_status()
 
     # Парсинг HTML-контента ответа
-    soup = BeauitfulSoup(response.content, 'html.parser')
+    soup = BeautifulSoup(response.content, 'html.parser')
 
     # Поиск элемента с ценой в HTML 
     price_meta = soup.find('meta', itemprop='price')
